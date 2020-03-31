@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+
+#app1 {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid red;
+}
+
+#app2 {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid blue;
+}
+#app2 > #list {
+  display: flex;
+}
+#app2 > #list > li {
+  width: 50%;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+#app2 > #list > li.active {
+  background: orange;
+}
+#app2 > #content > div {
+  display: none;
+}
+#app2 > #content > div.active {
+  color: red;
+  display: block;
+}
+
+#app3 {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid green;
+}
+#app3 div {
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid red;
+  margin: 5vw 0 0 5vw;
+  transition: transform 1s;
+}
+
+#app3 div.active {
+  transform: translateX(10vw);
+}
+
+#app4 {
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid yellow;
+}
+
+#app4 div {
+  width: 10vw;
+  height: 10vw;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: 5vw 0 0 5vw;
+}
+
+#app4 div.active {
+  animation: discoloration 2s infinite alternate-reverse;
+}
+
+@keyframes discoloration {
+  0% {
+    background: red;
+  }
+  33% {
+    background: yellow;
+  }
+  100% {
+    background: black;
+  }
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
